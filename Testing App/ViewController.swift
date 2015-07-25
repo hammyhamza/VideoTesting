@@ -20,25 +20,8 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "playNext", name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
-   
   }
   
-  @IBAction func play(sender: AnyObject) {
-    
-    let videoObject = PFObject(className: "Video")
-    let path = NSBundle.mainBundle().pathForResource("mov1", ofType: "mov")
-    let video = PFFile(name: "mov1.mov", contentsAtPath: path!)
-    videoObject.setObject(video, forKey: "videos")
-    
-    videoObject.saveInBackgroundWithBlock { (success, error) -> Void in
-      if success{
-        print("save successFully")
-      }else{
-        println(error?.description)
-      }
-    }
-  }
-
   @IBAction func fetch(sender: AnyObject) {
     
     let videoObject = PFQuery(className: "Video")

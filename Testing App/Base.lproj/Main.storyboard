@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,33 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-pS-ECD">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="VCO-Ov-Njg"/>
-                                    <constraint firstAttribute="width" constant="46" id="nXo-03-JH1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Send">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="VCO-Ov-Njg"/>
-                                        <exclude reference="nXo-03-JH1"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="VCO-Ov-Njg"/>
-                                        <include reference="nXo-03-JH1"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G3P-ea-Jdf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcX-fG-9rf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -74,33 +48,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82745099070000006" green="0.32549020649999999" blue="0.21960784489999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="N2h-pS-ECD" secondAttribute="bottom" constant="8" id="20N-LW-Wo7">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="N2h-pS-ECD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="L13-WX-iEU"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FcX-fG-9rf" secondAttribute="bottom" constant="20" id="WlP-WU-Zpn"/>
                             <constraint firstItem="FcX-fG-9rf" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="fqh-SC-vF8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="N2h-pS-ECD"/>
                                 <exclude reference="FcX-fG-9rf"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="L13-WX-iEU"/>
-                                <exclude reference="20N-LW-Wo7"/>
                                 <exclude reference="WlP-WU-Zpn"/>
                                 <exclude reference="fqh-SC-vF8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="N2h-pS-ECD"/>
                                 <include reference="FcX-fG-9rf"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="L13-WX-iEU"/>
-                                <include reference="20N-LW-Wo7"/>
                                 <include reference="WlP-WU-Zpn"/>
                                 <include reference="fqh-SC-vF8"/>
                             </mask>

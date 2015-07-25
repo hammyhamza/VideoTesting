@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A50EC8FC4426BF65A97A313 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0915BE8E894B8797E82B12 /* libPods.a */; };
-		6A7053271B637A0000FA5D8F /* mov1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6A7053251B637A0000FA5D8F /* mov1.mov */; };
-		6A7053281B637A0000FA5D8F /* mov2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6A7053261B637A0000FA5D8F /* mov2.mov */; };
 		6A8C2EDB1B270ED10029E1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C2EDA1B270ED10029E1C6 /* AppDelegate.swift */; };
 		6A8C2EDD1B270ED10029E1C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C2EDC1B270ED10029E1C6 /* ViewController.swift */; };
 		6A8C2EE01B270ED10029E1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8C2EDE1B270ED10029E1C6 /* Main.storyboard */; };
@@ -30,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		55EB60234F9BE9818B1FAA24 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6A7053251B637A0000FA5D8F /* mov1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mov1.mov; sourceTree = "<group>"; };
-		6A7053261B637A0000FA5D8F /* mov2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mov2.mov; sourceTree = "<group>"; };
 		6A71B9E81B47B43800272AB3 /* Testing App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Testing App-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A8C2ED51B270ED00029E1C6 /* Testing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8C2ED91B270ED10029E1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,8 +90,6 @@
 				6A8C2EDE1B270ED10029E1C6 /* Main.storyboard */,
 				6A8C2EE11B270ED10029E1C6 /* Images.xcassets */,
 				6A8C2EE31B270ED10029E1C6 /* LaunchScreen.xib */,
-				6A7053251B637A0000FA5D8F /* mov1.mov */,
-				6A7053261B637A0000FA5D8F /* mov2.mov */,
 				6A8C2ED81B270ED00029E1C6 /* Supporting Files */,
 				6A71B9E81B47B43800272AB3 /* Testing App-Bridging-Header.h */,
 			);
@@ -226,8 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A7053281B637A0000FA5D8F /* mov2.mov in Resources */,
-				6A7053271B637A0000FA5D8F /* mov1.mov in Resources */,
 				6A8C2EE01B270ED10029E1C6 /* Main.storyboard in Resources */,
 				6A8C2EE51B270ED10029E1C6 /* LaunchScreen.xib in Resources */,
 				6A8C2EE21B270ED10029E1C6 /* Images.xcassets in Resources */,
